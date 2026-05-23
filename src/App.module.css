@@ -1,0 +1,103 @@
+#center {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.title {
+  width: 150px;
+  height: 100px;
+  position: relative;
+  margin: 0 auto;
+  object-fit: fill;
+  border: none;
+}
+
+main {
+  flex-grow: 1;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 4em;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  margin-top: 10em;
+  border-radius: 10px;
+}
+
+.card:nth-last-child(2){
+  display: none;
+}
+
+.half {
+  background-color: #c22a27;
+  height: 50vh;
+  width: 100%;
+  position: fixed;
+  z-index: -2;
+}
+
+.halfAnimate {
+  background-color: #436aaf;
+  height: 50vh;
+  width: 100%;
+  position: fixed;
+  z-index: -2;
+}
+
+.pokebola {
+  height: 200px;
+  width: 200px;
+  position: fixed;
+  left: 50%;
+  top: 50vh;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  animation: ease-out 3s;
+}
+
+@keyframes shake {
+  0%   { transform: translate(-50%, -50%) rotate(0deg);}
+  10%  { transform: translate(-50%, -50%) rotate(15deg); }
+  20%  { transform: translate(-50%, -50%) rotate(-15deg); }
+  30%  { transform: translate(-50%, -50%) rotate(0deg); }
+  40%  { transform: translate(-50%, -50%) rotate(0deg); }
+  50%  { transform: translate(-50%, -50%) rotate(15deg); }
+  60%  { transform: translate(-50%, -50%) rotate(-15deg); }
+  70%  { transform: translate(-50%, -50%) rotate(0deg); }
+  80%  { transform: translate(-50%, -50%) rotate(0deg); }
+  83%  { transform: translate(-50%, -50%) rotate(15deg); }
+  86%  { transform: translate(-50%, -50%) rotate(0deg); }
+  89%  { transform: translate(-50%, -50%) rotate(-15deg); }
+  92%  { transform: translate(-50%, -50%) rotate(-0deg); }  
+  96%  { transform: translate(-50%, -50%) rotate(-0deg); }
+  100% { transform: translate(-50%, -50%) rotate(0deg); }
+}
+
+.shake {
+  animation: shake 2s ease-in-out;
+}
+
+.pokedex {
+  position: fixed;
+  top: 50%;
+  transform: translate(-0%, -50%);
+  left: 0;
+  height: 80vh;
+  width: 10em;
+  background-color: var(--bg);
+}
+
+.time{
+  text-align: center;
+  overflow-y: auto;
+  height: 100%;
+}

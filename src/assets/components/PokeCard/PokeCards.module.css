@@ -1,0 +1,84 @@
+.card {
+  background-color: var(--card-bg);
+  min-width: 200px;
+  max-width: 220px;
+  padding: 1.2em;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  transition: all 0.25s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+}
+.pokemonPicture {
+  width: 100px;
+  height: 100px;
+
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.pokemonPicture img {
+  width: 80%;
+  height: auto;
+}
+h1,
+h2,
+p {
+  text-align: center;
+  margin: 0;
+}
+h1 {
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+h2 {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+p {
+  font-size: 1rem;
+  color: var(--text-main);
+}
+.icon {
+  height: 18px;
+  width: 18px;
+}
+.types {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+button {
+  width: 100%;
+  padding: 0.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: none;
+  background-color: #2f2f35;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+button:hover {
+  background-color: var(--accent);
+  color: black;
+  transform: scale(1.03);
+}   
+button:active {
+  transform: scale(0.95);
+}
+
