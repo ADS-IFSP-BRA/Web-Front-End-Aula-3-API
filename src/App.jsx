@@ -6,7 +6,9 @@ import blueball from "./assets/img/blueball.png"
 import axios from "axios";
 import { useEffect, useState } from "react";
  console.log(
-    "Desenvolvido por : Everton Oliveira Paulino , GithHub : Everton45HH"
+    "Desenvolvido por : Everton Oliveira Paulino , GithHub : Everton45HH.",
+    "Esse projeto utiliza a API do PokeAPI para exibir uma lista de pokemons e permitir que o usuário capture eles, adicionando-os a um time.",
+    "O projeto foi desenvolvido utilizando React"
   )
 function App() {
 
